@@ -1,0 +1,140 @@
+@media screen and (max-width:992px) {
+
+    /* utility */
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3 rem;
+    }
+
+    p {
+        font-size: 1 rem;
+    }
+
+
+
+    .nav-toggel {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (max-width:768px) {
+    .primarybutton-dow {
+        flex-direction: column;
+    }
+
+    /* slider  */
+
+    .prev,
+    .next {
+        top:50%;
+    }
+
+    .prev {
+        left: 20px;
+    }
+    
+    .next {
+        right: 20px;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3 rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+
+    /* navbaar */
+
+    .navLogo {
+        width: 100px;
+    }
+
+    /* slider  */
+    .prev,
+    .next {
+        display: none;
+    }
+
+    .linkButton {
+        width: 100%;
+        background-image: none;
+
+    }
+
+    .qrcode {
+        width: 100%;
+        margin: auto;
+    }
+
+    .primarybutton-dow h2 {
+        padding: 10px 60px;
+        margin: auto;
+    }
+
+    /* Download-statics */
+    .download-statics {
+        flex-direction: column;
+    }
+
+    .statics-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* footer */
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .logo-footer img {
+        width: 150px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,316 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #B82424;
+    --primary-color-dark: #861b1b;
+    --secondary-color: #141414;
+    --padding: 20px;
+}
+
+body {
+    color: var(--secondary-color);
+    font-family: "Poppins", sans-serif;
+}
+
+/* utility */
+.container {
+    max-width: 1440px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5 rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+
+}
+
+.menuHover {
+    color: var(--primary-color);
+}
+
+.menuHover:hover {
+    color: var(--primary-color-dark);
+}
+
+.primaryButton {
+    background-color: var(--primary-color);
+    padding: 11px 20px;
+    border-radius: 10px;
+    color: white !important;
+}
+
+/* Navbaar */
+
+.navbaar {
+    /* margin-top: 20px; */
+    justify-content: space-between;
+    padding: var(--padding);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+.navLogo {
+    width: 150px;
+}
+
+.nav-links {
+    display: inline-blocks;
+}
+
+.navMenu {
+    list-style: none;
+    gap: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.nav-toggel {
+    display: none;
+    padding-right: 20px;
+}
+
+.nav-toggel i {
+    font-size: 1.5rem;
+}
+
+/* slider  */
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+
+.slider {
+    width: 100%;
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+    /* Ensure buttons are above slider */
+}
+
+.prev {
+    left: 30px;
+}
+
+.next {
+    right: 30px;
+}
+
+.slider-indicator {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #333;
+}
+
+
+/* Download-section */
+
+.downloadApp {
+    justify-content: space-around;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}
+
+
+.linkButton {
+    width: 70%;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    margin: auto 0px;
+    flex-wrap: wrap;
+    background-image: url(Images/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.linkButton h1 {
+
+    align-items: center;
+
+}
+
+.linkButton h1 span {
+    color: var(--primary-color)
+}
+
+.linkButton h3 {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 15px 0px;
+}
+
+.qrcode {
+    width: 100%;
+    padding-block: 20px auto;
+    margin-top: 20px;
+}
+
+.qr {
+    width: 50%;
+}
+
+.primarybutton-dow {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    /* flex-direction: column; */
+}
+
+.primarybutton-dow h2 {
+    padding: 15px 40px;
+}
+
+.playstore {
+    width: 280px;
+}
+
+
+/* mobile screen */
+.appImage {
+    width: 320px;
+}
+
+.homeScreen {
+    width: 100%;
+}
+
+/* Download-statics */
+.download-statics {
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+}
+
+.statics-card {
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-statics {
+    color: #861b1b;
+}
+
+.download-statics h2 i {
+    font-size: 2rem;
+}
+
+.download-statics h2 {
+    margin: 5px 0px;
+}
+
+/* footer */
+
+.footer {
+    background-color: #2f608f;
+    color: white !important;
+    justify-content: space-around;
+    padding: 30px 0px;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.footer a {
+    color: white !important;
+}
+
+.icon-footer {
+    text-align: center;
+}
+
+.icon-footer i {
+    width: 30px;
+}
+
+.icon-footer h4 {
+    font-weight: 500;
+}
+
+.footer-menu {
+    gap: 20px;
+}
+
+.footer-copyright {
+    font-weight: 500;
+    text-align: center;
+}
